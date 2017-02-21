@@ -20,7 +20,7 @@ function animateSubheader1() {
 }
 
 function animateSubheader2() {
-	$('#subheader-2').textillate({ in: { effect: 'flipInX' }, callback: animateSubheader3 });
+	//$('#subheader-2').textillate({ in: { effect: 'flipInX' }, callback: animateSubheader3 });
 }
 
 function animateSubheader3() {
