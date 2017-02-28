@@ -3,9 +3,6 @@ import '../css/Window.css';
 
 import Splash from './Splash';
 import Content from './Content';
-import CardSection from './CardSection';
-import CardRow from './CardRow';
-import Card from './Card';
 import ContentRow from './ContentRow';
 import Footer from './Footer';
 
