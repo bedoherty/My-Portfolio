@@ -11,6 +11,14 @@ class Footer extends Component {
             <h3>
                 Iconography by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from Flaticon
             </h3>
+            <h3>
+                <a href="http://github.com/bedoherty">
+                    <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bdoherty92/">
+                    <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+            </h3>
         </div>
     );
   }

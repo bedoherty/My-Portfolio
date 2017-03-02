@@ -1,0 +1,27 @@
+.project-row h1 {
+    font-family: 'Open Sans';
+    font-size: 3vh;
+    color: #333333;
+    margin: 0px;
+    margin-bottom: 1vh;
+}
+
+.project-row h2 {
+    font-family: 'Open Sans';
+    font-size: 2vh;
+    color: #333333;
+    margin: 0px;
+    margin-bottom: 0.5vh;
+}
+
+.project-row h2:last-of-type {
+    margin-bottom: 1.5vh;
+}
+
+.project-row p {
+    font-family: 'Open Sans';
+    font-size: 1.75vh;
+    line-height: 2vh;
+    color: #333333;
+    margin-bottom: 2vh;
+}

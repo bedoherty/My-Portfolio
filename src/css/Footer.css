@@ -17,6 +17,15 @@
     color: whitesmoke;
 }
 
+.footer i:first-child {
+	margin-right: 1vh;
+}
+
+.footer a i {
+  color: whitesmoke;
+  text-decoration: none; /* no underline */
+}
+
 .footer > h3:not(:last-child) {
 	margin-bottom: 1vh;
 }

@@ -26,3 +26,7 @@
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: cornflowerblue;
 }
+
+.projects-prelude {
+    margin-bottom: 1vh;
+}

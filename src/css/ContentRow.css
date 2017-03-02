@@ -26,28 +26,6 @@
     border-bottom: 1px solid whitesmoke;
 }
 
-.content-row h1 {
-    font-family: 'Open Sans';
-    font-size: 3vh;
-    color: #333333;
-}
-
-.content-row h2 {
-    font-family: 'Open Sans';
-    font-size: 2vh;
-    color: #333333;
-}
-
-.content-row h2:last-of-type {
-    margin-bottom: 1vh;
-}
-
-.content-row p {
-    font-family: 'Open Sans';
-    font-size: 1.5vh;
-    color: #333333;
-}
-
 .content-row > div > div > h2 {
     font-weight: normal;
     font-family: 'Open Sans';
@@ -64,4 +42,8 @@
 .content-icon {
 	height: 30vh;
 	width: 30vh;
+}
+
+.content-row h2 {
+    font-family: 'Open Sans';
 }
