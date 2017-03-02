@@ -26,13 +26,12 @@
     border-bottom: 1px solid whitesmoke;
 }
 
-.content-row > div > div > h2 {
+.content-row h2 {
     font-weight: normal;
     font-family: 'Open Sans';
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    color: darkslategray;
+
+    font-size: 2vh;
+    color: #333333;
 }
 
 .content-row:nth-child(odd) {

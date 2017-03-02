@@ -7,6 +7,7 @@ import ContentRow from './ContentRow';
 import Footer from './Footer';
 import ExperienceRow from './ExperienceRow';
 import ProjectRow from './ProjectRow';
+import SkillList from './SkillList';
 
 import boss from "../assets/img/boss.svg";
 import resume from "../assets/img/resume.svg";
@@ -21,6 +22,11 @@ class Window extends Component {
         	<Splash />
         	<Content>
         		<ContentRow title="About Me" iconSource={boss}>
+                    <div className="pure-g prelude">
+                        <div className="pure-u-3-5">
+                            <h2>Insert awkward personal bio here</h2>
+                        </div>
+                    </div>
                 </ContentRow>
                 <ContentRow title="Work Experience" iconSource={resume}>
                     <div className="pure-g">
@@ -46,8 +52,10 @@ class Window extends Component {
                 </ContentRow>
                 <ContentRow title="My Work" iconSource={laptop}>
                     <div className="pure-g">
-                        <div className="pure-u-1-1 projects-prelude">
-                            <h2>Most of my non proprietary work can be found on <a href="http://github.com/bedoherty">my github page</a>, however I've highlighted two of my favorite personal projects below.</h2>
+                        <div className="pure-g prelude">
+                            <div className="pure-u-3-5">
+                                <h2>Most of my non proprietary work can be found on <a href="http://github.com/bedoherty">my github page</a>, however I've highlighted two of my favorite personal projects below.</h2>
+                            </div>
                         </div>
                         <ProjectRow
                             projectTitle="PillPusher"
@@ -64,8 +72,23 @@ class Window extends Component {
                     </div>
                 </ContentRow>
                 <ContentRow title="My Skills" iconSource={toolbox}>
+                    <div className="pure-g">
+                        <SkillList
+                            skillLevel="Platforms"
+                            skills={["Android", "React Native/React JS", "Django", "Flask", "NodeJS", "Drupal"]}
+                        />
+                        <SkillList
+                            skillLevel="Languages"
+                            skills={["C#", "Java", "Python", "Javascript", "PHP", "C++"]}
+                        />
+                    </div>
                 </ContentRow>
                 <ContentRow title="About This Site" iconSource={browser}>
+                    <div className="pure-g prelude">
+                        <div className="pure-u-3-5">
+                            <h2>Built on React JS and stuff</h2>
+                        </div>
+                    </div>
                 </ContentRow>
                 <Footer />
         	</Content>

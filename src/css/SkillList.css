@@ -1,0 +1,27 @@
+.skill-list h1 {
+    font-family: 'Open Sans';
+    font-size: 3vh;
+    color: #333333;
+    margin: 0px;
+    margin-bottom: 1vh;
+}
+
+.skill-list h2 {
+    font-family: 'Open Sans';
+    font-size: 2vh;
+    color: #333333;
+    margin: 0px;
+    margin-bottom: 0.5vh;
+}
+
+.skill-list h2:last-of-type {
+    margin-bottom: 1.5vh;
+}
+
+.skill-list p {
+    font-family: 'Open Sans';
+    font-size: 1.75vh;
+    line-height: 2vh;
+    color: #333333;
+    margin-bottom: 2vh;
+}
