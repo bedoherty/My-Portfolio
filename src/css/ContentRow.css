@@ -9,24 +9,48 @@
 	vertical-align: middle;
 }
 
-.content-row > div > div > h1 {
+.content-row-header {
     color: cornflowerblue;
     font-weight: normal;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1vh;
     border-bottom: 1px solid lightgray;
+    font-size: 3vh;
+    margin-bottom: 2vh;
 }
 
-.content-row:nth-child(odd) > div > div > h1 {
+.content-row:nth-child(odd) .content-row-header {
     border-bottom: 1px solid whitesmoke;
+}
+
+.content-row h1 {
+    font-family: 'Open Sans';
+    font-size: 3vh;
+    color: #333333;
+}
+
+.content-row h2 {
+    font-family: 'Open Sans';
+    font-size: 2vh;
+    color: #333333;
+}
+
+.content-row h2:last-of-type {
+    margin-bottom: 1vh;
+}
+
+.content-row p {
+    font-family: 'Open Sans';
+    font-size: 1.5vh;
+    color: #333333;
 }
 
 .content-row > div > div > h2 {
     font-weight: normal;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     width: 90%;
     margin-left: auto;
     margin-right: auto;

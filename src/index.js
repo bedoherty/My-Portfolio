@@ -5,7 +5,9 @@ import './css/general/reset.css';
 import './css/general/animate.css';
 import './css/pure/pure-min.css';
 
+import ScrollArea from 'react-scrollbar';
+
 ReactDOM.render(
-  <Window />,
+	<Window />,
   document.getElementById('root')
 );

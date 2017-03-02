@@ -11,8 +11,11 @@ class ContentRow extends Component {
         			<img className="content-icon" alt="ERROR" src={this.props.iconSource}/>
         		</div>
         		<div className="pure-u-3-5">
-        			<h1>{this.props.title}</h1>
-        			<h2>{this.props.content}</h2>
+                    <div className="pure-g">
+                        <div className="pure-u-23-24 content-row-header">{this.props.title}</div>
+                        <div className="pure-u-1-24" />
+                    </div>
+        			{this.props.children}
         		</div>
         	</div>
         </div>
