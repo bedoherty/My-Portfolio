@@ -1,0 +1,49 @@
+.content-row {
+	background-color: whitesmoke;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.content-row > div > div > img {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.content-row-header {
+    color: cornflowerblue;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid lightgray;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.content-row:nth-child(odd) .content-row-header {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.content-row h2 {
+    font-weight: normal;
+    font-family: 'Open Sans';
+
+    font-size: 2vh;
+    line-height: 3vh;
+    color: #333333;
+}
+
+.content-row:nth-child(odd) {
+	background-color: lightgrey;
+}
+
+.content-icon {
+	height: 30vh;
+	width: 30vh;
+}
+
+.content-row h2 {
+    font-family: 'Open Sans';
+}

@@ -1,0 +1,31 @@
+.footer {
+	padding-top: 3vh;
+	padding-bottom: 2vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	background-color: cornflowerblue;
+	color: whitesmoke;
+}
+
+.footer > h3 {
+    font-weight: normal;
+    font-family: 'Open Sans';
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.footer i:first-child {
+	margin-right: 1vh;
+}
+
+.footer a i {
+  color: whitesmoke;
+  text-decoration: none; /* no underline */
+}
+
+.footer > h3:not(:last-child) {
+	margin-bottom: 1vh;
+}
