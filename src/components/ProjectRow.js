@@ -9,6 +9,9 @@ class ProjectRow extends Component {
             <h2>{this.props.projectSubtitle}</h2>
             <h2>{this.props.projectDate}</h2>
             <p>{this.props.projectDescription}</p>
+            {this.props.relevantLinks.map((obj) =>
+                <a target="_blank" href={obj.value}><p>{obj.key}</p></a>
+            )}
         </div>
     );
   }

@@ -75,12 +75,21 @@ class Window extends Component {
                             projectSubtitle="Indiana HIMSS FHIR Connectathon"
                             projectDate="April 2016"
                             projectDescription="Together with a couple coworkers I participated in the Indiana HIMSS FHIR Connectathon.  We built out a REST API based server that would sync with FHIR based healthcare servers to retrieve data about a patients medication orders.  The medication information would then be served via REST API, as well as automatically triggering push notifications to a mobile device when it needs to be taken.  We took first place, and I have linked a video of our final presentation.  Apologies for the shaky iPhone recording."
+                            relevantLinks={
+                                [
+                                    {
+                                        key: "Demo Video",
+                                        value: "https://www.youtube.com/watch?v=5I2D5V_4BjA"
+                                    }
+                                ]
+                            }
                         />
                         <ProjectRow
                             projectTitle="MagicTCGPriceAPI"
                             projectSubtitle="Personal/Open Source Project"
                             projectDate="2013"
                             projectDescription="This was a project I started way back in 2013 when I was quite  infatuated with Magic the Gathering.  I decided I needed more open access to card information/pricing, so I wrote a Google App Engine python server to scrape data from various websites. (TCGPlayer, Star City Games, etc)  This project was something I sort of just kicked out in a weekend, and then forgot about.  Until one day many months later when I received an issue opened notification, my first on Github.  After determining the error, I was able to figure out that I was actually hitting Google Cloud's free quota daily, something to the tune of 48k requests per day."
+                            relevantLinks={[]}
                         />
                     </div>
                 </ContentRow>
