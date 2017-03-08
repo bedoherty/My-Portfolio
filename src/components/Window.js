@@ -21,13 +21,15 @@ class Window extends Component {
         <div>
         	<Splash />
         	<Content>
-        		<ContentRow title="About Me" iconSource={boss}>
+        		{/*
+                <ContentRow title="About Me" iconSource={boss}>
                     <div className="pure-g prelude">
                         <div className="pure-u-3-5">
                             <h2>Insert awkward personal bio here</h2>
                         </div>
                     </div>
                 </ContentRow>
+                */}
                 <ContentRow title="Work Experience" iconSource={resume}>
                     <div className="pure-g">
                         <ExperienceRow 
