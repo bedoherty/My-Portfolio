@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import '../css/ContentRow.css';
+import Scroll from 'react-scroll';
+var Element    = Scroll.Element;
 
 class ContentRow extends Component {
   render() {
     return (
         <div className="pure-u-1-1 content-row">
+            <Element name={this.props.scrollId} />
         	<div className="pure-g">
         		<div className="pure-u-1-5" />
         		<div className="pure-u-1-5">

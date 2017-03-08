@@ -8,17 +8,28 @@ import Footer from './Footer';
 import ExperienceRow from './ExperienceRow';
 import ProjectRow from './ProjectRow';
 import SkillList from './SkillList';
+import Header from './Header';
 
-import boss from "../assets/img/boss.svg";
+//  import boss from "../assets/img/boss.svg";
 import resume from "../assets/img/resume.svg";
 import laptop from "../assets/img/laptop.svg";
 import toolbox from "../assets/img/toolbox.svg";
 import browser from "../assets/img/browser.svg";
 
+import Scroll from 'react-scroll';
+var Element    = Scroll.Element;
+
 class Window extends Component {
-  render() {
+    constructor(props) {
+        super(props);
+        this.state = {headerOpacity: 0};
+    }
+
+    render() {
     return (
         <div>
+            <Element name="home" />
+            <Header headerOpacity={this.state.headerOpacity}/>
         	<Splash />
         	<Content>
         		{/*
@@ -30,7 +41,7 @@ class Window extends Component {
                     </div>
                 </ContentRow>
                 */}
-                <ContentRow title="Work Experience" iconSource={resume}>
+                <ContentRow title="Work Experience" iconSource={resume} scrollId="work-experience">
                     <div className="pure-g">
                         <ExperienceRow 
                             jobTitle="Junior Software Engineer"
@@ -52,7 +63,7 @@ class Window extends Component {
                         />
                     </div>
                 </ContentRow>
-                <ContentRow title="My Work" iconSource={laptop}>
+                <ContentRow title="My Work" iconSource={laptop} scrollId="my-work">
                     <div className="pure-g">
                         <div className="pure-g prelude">
                             <div className="pure-u-3-5">
@@ -73,7 +84,7 @@ class Window extends Component {
                         />
                     </div>
                 </ContentRow>
-                <ContentRow title="My Skills" iconSource={toolbox}>
+                <ContentRow title="My Skills" iconSource={toolbox} scrollId="my-skills">
                     <div className="pure-g">
                         <SkillList
                             skillLevel="Platforms"
@@ -85,10 +96,10 @@ class Window extends Component {
                         />
                     </div>
                 </ContentRow>
-                <ContentRow title="About This Site" iconSource={browser}>
+                <ContentRow title="About This Site" iconSource={browser} scrollId="about-site">
                     <div className="pure-g prelude">
                         <div className="pure-u-3-5">
-                            <h2>Built on React JS and stuff</h2>
+                            <h2>This site was a personal project I spun up for several reasons.  First off, I really enjoyed developing in React Native, and wanted more web based React JS experience.  Secondly, I realized I had no good way to present myself/my resume, and wanted to remedy that situation.  And lastly, having worked in the Healthcare IT field for so long, I wanted to prove to myself that I was still capable of using modern web frameworks.</h2>
                         </div>
                     </div>
                 </ContentRow>
@@ -96,10 +107,20 @@ class Window extends Component {
         	</Content>
         </div>
     );
-  }
+    }
 
-  componentDidMount() {
-  }
+    componentDidMount() {
+        window.splashHeight = window.innerHeight / 100 * 80;
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (e) => {
+        this.setState({headerOpacity: (window.scrollY / window.splashHeight)});
+    }
 }
 
 export default Window;
