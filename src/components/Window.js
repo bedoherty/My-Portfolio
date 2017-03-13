@@ -47,19 +47,19 @@ class Window extends Component {
                             jobTitle="Junior Software Engineer"
                             employer="Intelligent Medical Objects"
                             employmentPeriod="Jan 2016 - Present"
-                            jobDescription="Using any necessary technology to solve whatever business/healthcare problems are thrown my way. Primarily building web applications and sales demos."
+                            jobDescription="Responsible for organizing/leading sponsored work with the University of Illinois.  Assisted with building demos for tradeshows/conferences.  Assisted with marketing website redesign."
                         />
                         <ExperienceRow 
                             jobTitle="Software Engineering Intern"
                             employer="Intelligent Medical Objects"
                             employmentPeriod="Jun 2013 - Jan 2016"
-                            jobDescription="Develop strategic mobile applications as well as web applications and utilities."
+                            jobDescription="Developed an android app for the R&D department.  Created several internal web apps and sales demos."
                         />
                         <ExperienceRow 
                             jobTitle="IT Intern/Technical Consultant"
                             employer="EnterpriseWorks"
                             employmentPeriod="Jun 2012 - Aug 2012"
-                            jobDescription="Served as IT staff and support as well as a technical consultant to start up companies in the incubator. Provided services ranging from writing code for MSP430 microcontrollers to creating websites. Also developed the UIUC Research Park Android App."
+                            jobDescription="Served as IT staff as well as a technical consultant to startup companies in the incubator. Provided services ranging from writing code for MSP430 microcontrollers to creating websites. Also developed the UIUC Research Park Android App."
                         />
                     </div>
                 </ContentRow>
@@ -88,7 +88,7 @@ class Window extends Component {
                             projectTitle="MagicTCGPriceAPI"
                             projectSubtitle="Personal/Open Source Project"
                             projectDate="2013"
-                            projectDescription="This was a project I started way back in 2013 when I was quite  infatuated with Magic the Gathering.  I decided I needed more open access to card information/pricing, so I wrote a Google App Engine python server to scrape data from various websites. (TCGPlayer, Star City Games, etc)  This project was something I sort of just kicked out in a weekend, and then forgot about.  Until one day many months later when I received an issue opened notification, my first on Github.  After determining the error, I was able to figure out that I was actually hitting Google Cloud's free quota daily, something to the tune of 48k requests per day."
+                            projectDescription="This was a project I started way back in 2013 when I was quite infatuated with Magic the Gathering.  I decided I needed more open access to card information/pricing, so I wrote a Google App Engine python server to scrape data from various websites. (TCGPlayer, Star City Games, etc)  This project was something I sort of just kicked out in a weekend, and then forgot about.  Until one day many months later when I received an issue opened notification, my first on Github.  After determining the error, I was able to figure out that I was actually hitting Google Cloud's free quota daily, something to the tune of 48k requests per day."
                             relevantLinks={[]}
                         />
                     </div>
