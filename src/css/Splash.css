@@ -83,6 +83,10 @@
 		height: 40vh !important;
 	}
 
+	.top-content {
+		top: 50%;
+	}
+
 	.top-overlay {
 		height: 40vh !important;
 	}
@@ -97,5 +101,9 @@
 
 	.fa-5x {
 	    font-size: 3em;
+	}
+
+	#indicate-more {
+		display: none !important;
 	}
 }
