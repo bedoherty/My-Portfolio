@@ -107,7 +107,7 @@ class Window extends Component {
                 </ContentRow>
                 <ContentRow title="About This Site" iconSource={browser} scrollId="about-site">
                     <div className="pure-g prelude">
-                        <div className="pure-u-3-5">
+                        <div className="pure-u-md-3-5 pure-u-4-5 ">
                             <h2>This site was a personal project I spun up for several reasons.  First off, I really enjoyed developing in React Native, and wanted more web based React JS experience.  Secondly, I realized I had no good way to present myself/my resume, and wanted to remedy that situation.  And lastly, having worked in the Healthcare IT field for so long, I wanted to prove to myself that I was still capable of using modern web frameworks.</h2>
                         </div>
                     </div>
