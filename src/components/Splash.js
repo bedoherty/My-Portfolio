@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Splash.css';
 import Scroll from 'react-scroll';
-import MediaQuery from 'react-responsive';
 
 var scroller = Scroll.scroller;
 
@@ -27,7 +26,8 @@ class Splash extends Component {
   	scroller.scrollTo('content', {
 	  duration: 1500,
 	  delay: 100,
-	  smooth: true
+	  smooth: true,
+	  offset: -60,
 	});
   }
 }
