@@ -5,3 +5,12 @@
 	width: 100%;
 	background: lightgrey;
 }
+
+/*
+ *	Translate this component vertically on mobile
+ */
+@media (max-width: 768px) {
+	#content {
+		top: 40vh !important;
+	}
+}

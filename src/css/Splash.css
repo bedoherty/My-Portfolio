@@ -10,9 +10,9 @@
 	background-size: cover;
 	height: 90vh;
 	-webkit-box-shadow: 0 0 0 4px black, 0 4px 4px black;
-  -moz-box-shadow: 0 0 0 4px black, 0 4px 4px black;
-  box-shadow: 0 0 0 4px black, 0 4px 4px black;
-  position: relative;
+	-moz-box-shadow: 0 0 0 4px black, 0 4px 4px black;
+	box-shadow: 0 0 0 4px black, 0 4px 4px black;
+	position: relative;
 }
 
 .top-overlay {
@@ -68,4 +68,34 @@
 	animation-duration: 3s;
 	animation-name: fadeinout;
 	animation-iteration-count: infinite;
+}
+
+/*
+ *	Shrink this component on mobile
+ */
+@media (max-width: 768px) {
+	.header
+	{
+		display: none !important;
+	}
+
+	.top-section {
+		height: 40vh !important;
+	}
+
+	.top-overlay {
+		height: 40vh !important;
+	}
+
+	.top-content > h1 {
+		font-size: 24px;
+	}
+
+	.top-content > h2 {
+	    font-size: 18px;
+	}
+
+	.fa-5x {
+	    font-size: 3em;
+	}
 }
