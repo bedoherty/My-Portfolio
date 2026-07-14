@@ -1,0 +1,98 @@
+body {
+  background-color: #10131a;
+  color: #e1e2eb;
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #10131a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2026;
+  border: 2px solid #10131a;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #272a31;
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(29, 32, 38, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.glass-panel-hover:hover {
+  border-color: #7048e8; /* brandViolet.6 */
+  box-shadow: 0 0 25px rgba(112, 72, 232, 0.15);
+  transform: translateY(-4px) scale(1.015);
+}
+
+/* Ambient Glow Gradients */
+.ambient-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(112, 72, 232, 0.1) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glow-cyan {
+  background: radial-gradient(circle, rgba(34, 184, 191, 0.08) 0%, transparent 70%);
+}
+
+/* Rotating Word Subtitle Animation */
+.word-carousel {
+  height: 2rem;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.word-carousel-inner {
+  animation: carousel 9s linear infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+.word-carousel-item {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+@keyframes carousel {
+  0%, 25% { transform: translateY(0); }
+  33%, 58% { transform: translateY(-2rem); }
+  66%, 91% { transform: translateY(-4rem); }
+  100% { transform: translateY(0); }
+}
+
+/* Scroll Indicator Bounce */
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s infinite ease-in-out;
+}
+
+/* Timeline Custom Nodes styling */
+.timeline-node-active {
+  box-shadow: 0 0 0 4px #10131a, 0 0 12px #22b8cf;
+}
